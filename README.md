@@ -1,6 +1,6 @@
 # SpendLens — Bank Statement Analyzer
 
-[Open SpendLens](https://spendlens-india.raj-6d6f.chatgpt.site)
+[Open SpendLens](https://pariraipro.github.io/bank-statement-analyzer/)
 
 A browser-based statement analyzer for Indian rupee transactions. Import CSV or text-based PDF bank statements, review transactions, and explore spending, income, categories, trends, and unusual charges. All statement contents and PDF passwords stay in the browser session. Closing or refreshing the page clears imported data.
 
@@ -32,3 +32,7 @@ Run `node tests/engine.test.mjs` and `node tests/pdf-extraction.test.mjs` for tr
 PDF extraction and reader integration are checked programmatically. Browser interaction and visual QA of this PDF update were not requested.
 
 Unusual-charge flags are review suggestions based on the uploaded history, not confirmations of fraud. No live bank or card connection is configured.
+
+## Publishing
+
+The public website is served by GitHub Pages. Pushes to `main` run `.github/workflows/pages.yml`, which publishes the static `dist` directory. Assets and JavaScript imports use relative paths so they work beneath the repository URL. No account or sign-in is required to use the demo.
